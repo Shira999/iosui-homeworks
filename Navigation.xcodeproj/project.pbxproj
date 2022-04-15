@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		957EB26E28034BF6004B1BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957EB26D28034BF6004B1BBF /* AppDelegate.swift */; };
-		957EB27228034BF6004B1BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957EB27128034BF6004B1BBF /* ViewController.swift */; };
+		957EB27228034BF6004B1BBF /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957EB27128034BF6004B1BBF /* FeedViewController.swift */; };
 		957EB27728034BFA004B1BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957EB27628034BFA004B1BBF /* Assets.xcassets */; };
 		957EB27A28034BFA004B1BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957EB27828034BFA004B1BBF /* LaunchScreen.storyboard */; };
+		957EB2822805EBA7004B1BBF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957EB2812805EBA7004B1BBF /* MainTabBarController.swift */; };
+		957EB2842805EC3F004B1BBF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957EB2832805EC3F004B1BBF /* ProfileViewController.swift */; };
+		95934EE22808998400256950 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95934EE12808998400256950 /* PostViewController.swift */; };
+		95934EE42808A17D00256950 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95934EE32808A17D00256950 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		957EB26A28034BF6004B1BBF /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957EB26D28034BF6004B1BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		957EB27128034BF6004B1BBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		957EB27128034BF6004B1BBF /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		957EB27628034BFA004B1BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		957EB27928034BFA004B1BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		957EB27B28034BFA004B1BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		957EB2812805EBA7004B1BBF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		957EB2832805EC3F004B1BBF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		95934EE12808998400256950 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		95934EE32808A17D00256950 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				957EB26D28034BF6004B1BBF /* AppDelegate.swift */,
-				957EB27128034BF6004B1BBF /* ViewController.swift */,
+				957EB27128034BF6004B1BBF /* FeedViewController.swift */,
+				95934EE12808998400256950 /* PostViewController.swift */,
+				95934EE32808A17D00256950 /* InfoViewController.swift */,
+				957EB2812805EBA7004B1BBF /* MainTabBarController.swift */,
+				957EB2832805EC3F004B1BBF /* ProfileViewController.swift */,
 				957EB27628034BFA004B1BBF /* Assets.xcassets */,
 				957EB27828034BFA004B1BBF /* LaunchScreen.storyboard */,
 				957EB27B28034BFA004B1BBF /* Info.plist */,
@@ -131,8 +143,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				957EB27228034BF6004B1BBF /* ViewController.swift in Sources */,
+				957EB2842805EC3F004B1BBF /* ProfileViewController.swift in Sources */,
+				957EB27228034BF6004B1BBF /* FeedViewController.swift in Sources */,
 				957EB26E28034BF6004B1BBF /* AppDelegate.swift in Sources */,
+				957EB2822805EBA7004B1BBF /* MainTabBarController.swift in Sources */,
+				95934EE42808A17D00256950 /* InfoViewController.swift in Sources */,
+				95934EE22808998400256950 /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +297,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +326,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
